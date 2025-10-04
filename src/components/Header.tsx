@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full shadow-sm relative">
+    <nav className="w-full shadow-sm bg-white sticky top-0">
       <div className="main-container py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
