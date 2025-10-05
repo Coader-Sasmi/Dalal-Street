@@ -4,35 +4,40 @@ import { Apps, ArrowCircleDown, CheckCircle, EmojiObjects, Groups, ListAlt, Mili
 
 export default function CreditsFeatures() {
   return (
-    <section className="bg-white py-16 px-6 lg:px-20">
-      <div className="max-w-7xl mx-auto">
+    <section className="main-container">
         
         {/* Top Features */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 text-center">
           
           {/* Feature 1 */}
-          <div>
-            <ArrowCircleDown className="text-blue-600 text-6xl mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-gray-800">Receive credits upon subscribing.</h3>
-            <p className="mt-2 text-gray-600">
+          <div className="flex flex-col justify-start items-start gap-5">
+            <div className="bg-blue-600 rounded-full p-2 w-fit">
+            <ArrowCircleDown className="text-white text-6xl!" />
+            </div>
+            <h3 className="text-xl text-start font-bold text-gray-800">Receive credits upon subscribing.</h3>
+            <p className="mt-2 text-gray-600 text-start">
               {`Upon subscribing, you'll receive a set number of credits to access our research-backed trade calls.`}
             </p>
           </div>
 
           {/* Feature 2 */}
-          <div>
-            <Apps className="text-yellow-500 text-6xl mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-gray-800">Credits are deducted only for successful trades.</h3>
-            <p className="mt-2 text-gray-600">
-              Credits are only deducted when a trade is successful, ensuring you pay solely for successful outcomes.
+            <div className="flex flex-col justify-start items-start gap-5">
+            <div className="bg-yellow-600 rounded-full p-2 w-fit">
+            <Apps className="text-white text-6xl!" />
+            </div>
+            <h3 className="text-xl text-start font-bold text-gray-800">Credits are deducted only for successful trades.</h3>
+            <p className="mt-2 text-gray-600 text-start">
+              {`Credits are only deducted when a trade is successful, ensuring you pay solely for successful outcomes.`}
             </p>
           </div>
 
           {/* Feature 3 */}
-          <div>
-            <CheckCircle className="text-green-600 text-6xl mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-gray-800">Credits remain intact if the trade isn’t successful.</h3>
-            <p className="mt-2 text-gray-600">
+            <div className="flex flex-col justify-start items-start gap-5">
+            <div className="bg-green-600 rounded-full p-2 w-fit">
+            <CheckCircle className="text-white text-6xl!" />
+            </div>
+            <h3 className="text-xl text-start font-bold text-gray-800">Credits remain intact if the trade isn’t successful.</h3>
+            <p className="mt-2 text-gray-600 text-start">
               {`Your credits are preserved if a trade doesn't reach expected target.`}
             </p>
           </div>
@@ -65,7 +70,6 @@ export default function CreditsFeatures() {
           </div>
         </div>
 
-      </div>
     </section>
   );
 }
