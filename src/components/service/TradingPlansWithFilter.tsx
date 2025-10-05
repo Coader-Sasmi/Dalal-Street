@@ -251,7 +251,7 @@ const TradingPlansWithFilter = () => {
 {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+          className="fixed inset-0 flex items-center justify-center bg-black/50 z-[99]"
           onClick={handleBackdropClick}
         >
           <div

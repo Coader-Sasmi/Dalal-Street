@@ -82,8 +82,8 @@ const Footer = () => {
         <div className="col-span-2">
           <h3 className="font-semibold text-white mb-5">Fine Print</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-[0.8rem]">Privacy Policy</a></li>
-            <li><a href="#" className="text-[0.8rem]">Terms & Conditions</a></li>
+            <li><Link href="privacy" className="text-[0.8rem]">Privacy Policy</Link></li>
+            <li><Link href="terms" className="text-[0.8rem]">Terms & Conditions</Link></li>
             <li><a href="#" className="text-[0.8rem]">Disclaimer</a></li>
             <li><a href="#" className="text-[0.8rem]">Grievance Redressal Process</a></li>
             <li><Link href="refund" className="text-[0.8rem]">Refund Policy</Link></li>

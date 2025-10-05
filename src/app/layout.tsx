@@ -1,5 +1,7 @@
 import { Footer, Header } from "@/components";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,6 +21,14 @@ export default function RootLayout({
         <main className="overflow-x-hidden">
           {children}
         </main>
+          <Link
+          href="https://api.whatsapp.com/send?phone=919148638118"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-10 right-4 z-50 flex items-center justify-center w-12 h-12 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition"
+        >
+          <FaWhatsapp className="text-white w-6 h-6" />
+        </Link>
         <Footer />
       </body>
     </html>
