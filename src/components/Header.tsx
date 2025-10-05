@@ -12,23 +12,23 @@ export default function Navbar() {
       <div className="main-container py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link href={"/"} className="flex items-center">
             <img
               src="/main_logo3.png"
               alt="Dalal Street Logo"
               className="h-auto w-[25%]"
             />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-12 items-center">
-            <Link href="#" className="text-gray-800 font-semibold hover:text-[#075637]">
+            <Link href="service" className="text-gray-800 font-semibold hover:text-[#075637]">
               Services
             </Link>
-            <Link href="#" className="text-gray-800 font-semibold hover:text-[#075637]">
+            <Link href="streetfolios" className="text-gray-800 font-semibold hover:text-[#075637]">
               Streetfolios
             </Link>
-            <Link href="#" className="text-gray-800 font-semibold hover:text-[#075637]">
+            <Link href="streetview" className="text-gray-800 font-semibold hover:text-[#075637]">
               Streetview
             </Link>
             </div>
