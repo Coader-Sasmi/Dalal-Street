@@ -44,29 +44,26 @@ export default function CreditsFeatures() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-          <div className="bg-white shadow rounded-xl p-6 text-center">
-            <ListAlt className="text-blue-600 text-4xl mx-auto mb-3" />
-            <h3 className="text-2xl font-bold text-blue-600">100+</h3>
-            <p className="text-gray-600">Registrations Daily</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6 mt-16">
+          <div className=" shadow rounded-xl p-6 flex flex-col gap-3 justify-start items-start">
+            <ListAlt className="text-blue-600 text-5xl!" />
+            <h3 className="text-4xl font-bold text-blue-600">100+</h3>
+            <p className="">Registrations Daily</p>
           </div>
-
-          <div className="bg-white shadow rounded-xl p-6 text-center">
-            <MilitaryTech className="text-blue-600 text-4xl mx-auto mb-3" />
-            <h3 className="text-2xl font-bold text-blue-600">20+ Years</h3>
-            <p className="text-gray-600">Industry Experience</p>
+          <div className=" shadow rounded-xl p-6 flex flex-col gap-3 justify-start items-start">
+            <MilitaryTech className="text-blue-600 text-5xl!" />
+            <h3 className="text-4xl font-bold text-blue-600">20+ Years</h3>
+            <p className="">Industry Experience</p>
           </div>
-
-          <div className="bg-white shadow rounded-xl p-6 text-center">
-            <Groups className="text-blue-600 text-4xl mx-auto mb-3" />
-            <h3 className="text-2xl font-bold text-blue-600">3.4 Lakhs+</h3>
-            <p className="text-gray-600">Subscribers</p>
+          <div className=" shadow rounded-xl p-6 flex flex-col gap-3 justify-start items-start">
+            <Groups className="text-blue-600 text-5xl!" />
+            <h3 className="text-4xl font-bold text-blue-600">3.4 Lakhs+</h3>
+            <p className="">Subscribers</p>
           </div>
-
-          <div className="bg-white shadow rounded-xl p-6 text-center">
-            <EmojiObjects className="text-blue-600 text-4xl mx-auto mb-3" />
-            <h3 className="text-2xl font-bold text-blue-600">5 Lakhs +</h3>
-            <p className="text-gray-600">Total Research Ideas</p>
+          <div className=" shadow rounded-xl p-6 flex flex-col gap-3 justify-start items-start">
+            <EmojiObjects className="text-blue-600 text-5xl!" />
+            <h3 className="text-4xl font-bold text-blue-600">5 Lakhs +</h3>
+            <p className="">Total Research Ideas</p>
           </div>
         </div>
 
