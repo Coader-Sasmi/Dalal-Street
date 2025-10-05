@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function ResearchCalls() {
   return (
-    <section className="bg-white py-12 px-6 lg:px-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <section className="main-container bg-white py-12">
+      <div className="flex lg:flex-row flex-col justify-between gap-10 items-center">
         
         {/* Left Section */}
         <div>
@@ -29,13 +29,13 @@ export default function ResearchCalls() {
           <Image
             src="/home1.webp"
             alt="Research Calls"
-            width={500}
-            height={400}
-            className="rounded-2xl shadow"
+            width={700}
+            height={600}
+            className="rounded-2xl shadow "
           />
           
           {/* Floating Card */}
-          <div className="absolute -left-10 bottom-6 bg-white rounded-xl shadow-lg p-5 max-w-sm">
+          {/* <div className="absolute -left-10  bg-white rounded-xl shadow-lg p-5 max-w-sm">
             <div className="flex space-x-2 mb-2">
               <span className="bg-cyan-100 text-cyan-700 text-xs font-semibold px-2 py-1 rounded-md">
                 Age 28
@@ -55,17 +55,19 @@ export default function ResearchCalls() {
             <a href="#" className="mt-3 inline-block text-blue-600 font-medium text-sm">
               Start Free →
             </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Dots Navigation */}
+          </div> */}
+                {/* Dots Navigation */}
       <div className="flex justify-center mt-6 space-x-2">
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
         <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
       </div>
+        </div>
+        
+      </div>
+
+
     </section>
   );
 }

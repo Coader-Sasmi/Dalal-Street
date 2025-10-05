@@ -1,16 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import {
-  PhoneCall,
-  UserCheck,
-  Headphones,
-  BarChart3,
-  Newspaper,
-  FileText,
-  Filter,
-  Activity,
+    Activity,
+    BarChart3,
+    FileText,
+    Filter,
+    Headphones,
+    Newspaper,
+    PhoneCall,
+    UserCheck,
 } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -61,7 +61,7 @@ export default function InvestorsHub() {
       <div className="max-w-6xl mx-auto text-center">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Streetgains Investor&apos;s Hub
+          DalalStreet Investor&apos;s Hub
         </h2>
         <p className="mt-2 text-gray-600">
           Daily Market Views. Analyst Research Calls. Consistent Returns.

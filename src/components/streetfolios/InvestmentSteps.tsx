@@ -1,5 +1,5 @@
 "use client";
-import { Description, AccountBalanceWallet, BarChart, ArrowUpward } from "@mui/icons-material";
+import { AccountBalanceWallet, ArrowUpward, BarChart, Description } from "@mui/icons-material";
 
 export default function InvestmentSteps() {
   const steps = [
@@ -32,7 +32,7 @@ export default function InvestmentSteps() {
           A Simple Path to Invest: Structured, Transparent, and Smart
         </h2>
         <p className="text-gray-600 mb-12">
-          Getting started with Portfolios by Streetgains is straightforward. Here’s how it works:
+          Getting started with Portfolios by DalalStreet is straightforward. Here’s how it works:
         </p>
 
         {/* Step Timeline */}

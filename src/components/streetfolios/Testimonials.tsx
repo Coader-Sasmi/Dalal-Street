@@ -5,19 +5,19 @@ import { useState } from "react";
 export default function Testimonials() {
   const testimonials = [
     {
-      text: "I've always struggled with choosing the right stocks. Streetgains' curated portfolios take the guesswork out of it. I now follow a clear, research-backed strategy that keeps me focused on long-term growth.",
+      text: "I've always struggled with choosing the right stocks. DalalStreet' curated portfolios take the guesswork out of it. I now follow a clear, research-backed strategy that keeps me focused on long-term growth.",
       name: "Ramesh I",
       location: "Mumbai",
       rating: 5,
     },
     {
-      text: "Streetgains helped me invest with confidence. Their expert-curated portfolios align perfectly with my financial goals. Highly recommended!",
+      text: "DalalStreet helped me invest with confidence. Their expert-curated portfolios align perfectly with my financial goals. Highly recommended!",
       name: "Priya S",
       location: "Bangalore",
       rating: 5,
     },
     {
-      text: "I love the transparency and ease of investing with Streetgains. It's like having a personal financial advisor guiding me at every step.",
+      text: "I love the transparency and ease of investing with DalalStreet. It's like having a personal financial advisor guiding me at every step.",
       name: "Arjun K",
       location: "Delhi",
       rating: 4,
@@ -42,7 +42,7 @@ export default function Testimonials() {
         </h2>
         <p className="text-gray-600 mb-10">
           Don’t just take our word for it, here’s what real investors have to
-          say about their experience with Portfolios by Streetgains.
+          say about their experience with Portfolios by DalalStreet.
         </p>
 
         {/* Slider */}

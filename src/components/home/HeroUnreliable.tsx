@@ -1,7 +1,7 @@
 "use client";
 
+import { CheckCircle, ShieldCheck, XCircle } from "lucide-react";
 import Image from "next/image";
-import { XCircle, ShieldCheck, CheckCircle } from "lucide-react";
 
 export default function HeroUnreliable() {
   return (
@@ -13,7 +13,7 @@ export default function HeroUnreliable() {
         </h2>
 
         <p className="text-lg">
-          Join Streetgains Today! Pay for Successful Research Calls – Credits Based Subscription.
+          Join DalalStreet Today! Pay for Successful Research Calls – Credits Based Subscription.
         </p>
 
         {/* Benefits */}

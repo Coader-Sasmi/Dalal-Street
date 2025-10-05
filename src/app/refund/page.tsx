@@ -37,7 +37,7 @@ export default function Refund() {
           <h2 className="text-2xl font-semibold text-gray-900">Key Legal / Regulatory Points (Under SEBI Rules)</h2>
           <ul className="list-disc list-inside space-y-2 text-sm">
             <li>
-              Clients may request refunds for the unexpired portion ("unearned fees") upon early termination.
+              {`Clients may request refunds for the unexpired portion ("unearned fees") upon early termination.`}
             </li>
             <li>
               A breakage fee (deduction) is allowed under SEBI rules, up to a maximum of one quarter’s fee for Investment Advisers.

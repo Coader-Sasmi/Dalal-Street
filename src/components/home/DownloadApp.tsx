@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { CheckCircle } from "@mui/icons-material";
+import Image from "next/image";
 
 export default function DownloadApp() {
   return (
@@ -12,7 +12,7 @@ export default function DownloadApp() {
         <div className="flex-1 flex justify-center">
           <Image
             src="/home3.webp" 
-            alt="Streetgains App"
+            alt="DalalStreet App"
             width={400}
             height={600}
             className="rounded-2xl shadow-lg"
@@ -35,7 +35,7 @@ export default function DownloadApp() {
 
           {/* Title */}
           <h3 className="mt-3 text-xl md:text-2xl font-bold text-gray-800">
-            Streetgains Trade Calls App
+            DalalStreet Trade Calls App
           </h3>
 
           {/* Description */}

@@ -30,14 +30,14 @@ export default function FAQ() {
         "Absolutely. You can switch portfolios as your investment goals or risk preferences evolve.",
     },
     {
-      question: "How does Streetgains ensure the portfolios are aligned with my goals?",
+      question: "How does DalalStreet ensure the portfolios are aligned with my goals?",
       answer:
-        "Streetgains portfolios are designed with risk-adjusted returns in mind, ensuring they align with different financial objectives.",
+        "DalalStreet portfolios are designed with risk-adjusted returns in mind, ensuring they align with different financial objectives.",
     },
     {
-      question: "Is my investment safe with Portfolios by Streetgains?",
+      question: "Is my investment safe with Portfolios by DalalStreet?",
       answer:
-        "While all investments carry some risk, Streetgains’ research-backed approach minimizes unnecessary risks and focuses on long-term wealth creation.",
+        "While all investments carry some risk, DalalStreet’ research-backed approach minimizes unnecessary risks and focuses on long-term wealth creation.",
     },
   ];
 

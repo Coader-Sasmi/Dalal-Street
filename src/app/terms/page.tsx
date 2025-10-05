@@ -7,7 +7,7 @@ export default function TermsAndConditions() {
 
         {/* Intro */}
         <p>
-          These Terms & Conditions ("Terms") govern your use of our website and services. By accessing or using our platform, you agree to be bound by these Terms.
+          {`These Terms & Conditions ("Terms") govern your use of our website and services. By accessing or using our platform, you agree to be bound by these Terms.`}
         </p>
 
         {/* 1. Eligibility */}

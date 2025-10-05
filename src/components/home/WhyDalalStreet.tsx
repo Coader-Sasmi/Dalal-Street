@@ -1,12 +1,12 @@
 "use client";
 
 import {
-  TrendingUp,
-  Chat,
-  Psychology,
-  SupportAgent,
-  Handshake,
-  HeadsetMic,
+    Chat,
+    Handshake,
+    HeadsetMic,
+    Psychology,
+    SupportAgent,
+    TrendingUp,
 } from "@mui/icons-material";
 
 const features = [
@@ -54,14 +54,14 @@ const features = [
   },
 ];
 
-export default function WhyStreetgains() {
+export default function WhyDalalStreet() {
   return (
     <section className="bg-white py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto border border-gray-200 rounded-2xl p-10 shadow-sm">
         
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-          Why Streetgains?
+          Why DalalStreet?
         </h2>
         <p className="mt-2 text-gray-600">
           Trading and Investment Insights Based on Market Conditions Suitable For Everyone.
