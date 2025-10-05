@@ -119,7 +119,7 @@ export default function Navbar() {
             </button>
 
             <h1 className="text-2xl font-semibold text-center text-gray-800 mb-5">
-              "You are not a paid user. For more information, please contact our support team."
+              {"You are not a paid user. For more information, please contact our support team."}
             </h1>
 
           </div>
