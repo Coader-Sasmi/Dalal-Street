@@ -8,18 +8,18 @@ export default function ResearchCalls() {
       <div className="flex lg:flex-row flex-col justify-between gap-10 items-center">
         
         {/* Left Section */}
-        <div>
-          <h2 className="text-4xl font-bold text-gray-900 leading-snug">
+        <div className="flex flex-col gap-5">
+          <h2 className="lg:text-6xl text-2xl font-bold text-gray-900 ">
             Research Calls <br /> For Every{" "}
             <span className="text-blue-500">Trader</span>
           </h2>
           <p className="mt-4 text-gray-600 text-lg">
-           {` India's`} First SEBI Registered Credits-Based Subscription Model:{" "}
+           {` India's`} First SEBI Registered Credits-Based<br/> Subscription Model:{" "}
             <span className="font-semibold text-gray-800">
-              Pay only for Successful Research Calls.
+              Pay only for Successful<br/> Research Calls.
             </span>
           </p>
-          <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
+          <button className="mt-6 w-fit px-10 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
             Get Started Now
           </button>
         </div>
