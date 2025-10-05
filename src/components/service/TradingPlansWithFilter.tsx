@@ -76,7 +76,11 @@ const TradingPlansWithFilter = () => {
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedPeriod, setSelectedPeriod] = useState<string[]>([]);
 
-  const handleCheckbox = (value: string, selectedList: string[], setList: any) => {
+  const handleCheckbox = (
+    value: string,
+    selectedList: string[],
+    setList: React.Dispatch<React.SetStateAction<string[]>>
+  ) => {
     if (selectedList.includes(value)) {
       setList(selectedList.filter((v) => v !== value));
     } else {

@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
+import { useState } from "react";
 
 export default function FAQ() {
   const faqs = [
@@ -41,9 +41,9 @@ export default function FAQ() {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index:any) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 

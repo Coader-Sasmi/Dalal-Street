@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
 import { ArrowBackIos, ArrowForwardIos, Star } from "@mui/icons-material";
+import { useState } from "react";
 
 export default function Testimonials() {
   const testimonials = [
@@ -58,7 +58,7 @@ export default function Testimonials() {
           {/* Testimonial Content */}
           <div className="px-10">
             <p className="text-lg text-gray-800 italic mb-6">
-              "{testimonials[current].text}"
+              {`"${testimonials[current].text}"`}
             </p>
 
             {/* Rating */}

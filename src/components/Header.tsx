@@ -1,5 +1,7 @@
-// components/Navbar.tsx
+
 "use client";
+import Image from "next/image";
+
 import { Menu, Phone, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -12,13 +14,16 @@ export default function Navbar() {
       <div className="main-container py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href={"/"} className="flex items-center">
-            <img
-              src="/main_logo3.png"
-              alt="Dalal Street Logo"
-              className="h-auto w-[25%]"
-            />
-          </Link>
+        <Link href={"/"} className="flex items-center">
+          <Image
+            src="/main_logo3.png"
+            alt="Dalal Street Logo"
+            width={160}
+            height={60}
+            className="h-auto w-[25%]"
+            priority
+          />
+        </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-12 items-center">

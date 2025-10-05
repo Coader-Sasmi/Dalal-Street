@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowCircleDown, Apps, CheckCircle, ListAlt, MilitaryTech, Groups, EmojiObjects } from "@mui/icons-material";
+import { Apps, ArrowCircleDown, CheckCircle, EmojiObjects, Groups, ListAlt, MilitaryTech } from "@mui/icons-material";
 
 export default function CreditsFeatures() {
   return (
@@ -15,7 +15,7 @@ export default function CreditsFeatures() {
             <ArrowCircleDown className="text-blue-600 text-6xl mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-800">Receive credits upon subscribing.</h3>
             <p className="mt-2 text-gray-600">
-              Upon subscribing, you'll receive a set number of credits to access our research-backed trade calls.
+              {`Upon subscribing, you'll receive a set number of credits to access our research-backed trade calls.`}
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function CreditsFeatures() {
             <CheckCircle className="text-green-600 text-6xl mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-800">Credits remain intact if the trade isn’t successful.</h3>
             <p className="mt-2 text-gray-600">
-              Your credits are preserved if a trade doesn't reach expected target.
+              {`Your credits are preserved if a trade doesn't reach expected target.`}
             </p>
           </div>
         </div>

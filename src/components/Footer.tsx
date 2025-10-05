@@ -1,4 +1,6 @@
-// Footer.tsx
+"use client";
+import Image from 'next/image';
+
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -13,11 +15,15 @@ const Footer = () => {
       <div className="main-container flex flex-col gap-5">
             {/* Logo */}
           <div className=" flex items-center">
-            <img
-              src="/main_logo.png"
-              alt="Dalal Street Logo"
-              className="h-auto md:w-[8%] w-[24%]"
-            />
+          <Image
+            src="/main_logo.png"
+            alt="Dalal Street Logo"
+            width={200} // approximate width
+            height={60} // approximate height
+            className="h-auto md:w-[8%] w-[24%]"
+            priority
+          />
+
           </div>
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
@@ -93,16 +99,22 @@ const Footer = () => {
             Download the app to get started<br/> and stay informed on the go.
           </p>
           <div className="flex gap-3 mt-3">
-            <img
-              src="./Google_Play_Store.svg"
-              alt="Google Play"
-              className="h-10"
-            />
-            <img
-              src="./app-store.svg"
-              alt="App Store"
-              className="h-10"
-            />
+          <Image
+            src="/Google_Play_Store.svg"
+            alt="Google Play"
+            width={130}
+            height={40}
+            className="h-10"
+          />
+
+        <Image
+          src="/app-store.svg"
+          alt="App Store"
+          width={130}
+          height={40}
+          className="h-10"
+        />
+
           </div> 
         </div>
           <div className="col-span-4">

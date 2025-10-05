@@ -14,7 +14,7 @@ export default function ResearchCalls() {
             <span className="text-blue-500">Trader</span>
           </h2>
           <p className="mt-4 text-gray-600 text-lg">
-            India's First SEBI Registered Credits-Based Subscription Model:{" "}
+           {` India's`} First SEBI Registered Credits-Based Subscription Model:{" "}
             <span className="font-semibold text-gray-800">
               Pay only for Successful Research Calls.
             </span>
