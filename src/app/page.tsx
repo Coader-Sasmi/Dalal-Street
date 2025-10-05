@@ -1,6 +1,5 @@
 import CreditsFeatures from "@/components/home/CreditsFeatures";
 import CreditsModel from "@/components/home/CreditsModel";
-import DownloadApp from "@/components/home/DownloadApp";
 import InvestorsHub from "@/components/home/InvestorsHub";
 import OurProcess from "@/components/home/OurProcess";
 import ResearchCalls from "@/components/home/ResearchCalls";
@@ -13,7 +12,7 @@ export default function Home() {
     <ResearchCalls/>
     <CreditsModel/>
     <CreditsFeatures/>
-    <DownloadApp/>
+    {/* <DownloadApp/> */}
     <WhyDalalStreet/>
     <OurProcess/>
     <InvestorsHub/>

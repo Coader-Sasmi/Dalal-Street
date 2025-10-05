@@ -31,10 +31,13 @@ export default function Navbar() {
               Services
             </Link>
             <Link href="streetfolios" className="text-white font-semibold hover:text-gray-300">
-              Dalalfolios
+              Dalal Folios
             </Link>
             <Link href="streetview" className="text-white font-semibold hover:text-gray-300">
-              Dalalview
+              Dalal View
+            </Link>
+            <Link href="streetview" className="text-white font-semibold hover:text-gray-300">
+              Research Report
             </Link>
             </div>
             <div className="hidden md:flex space-x-4 items-center">
