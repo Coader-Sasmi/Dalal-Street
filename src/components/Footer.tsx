@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-
+import Link from 'next/link';
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -86,7 +86,7 @@ const Footer = () => {
             <li><a href="#" className="text-[0.8rem]">Terms & Conditions</a></li>
             <li><a href="#" className="text-[0.8rem]">Disclaimer</a></li>
             <li><a href="#" className="text-[0.8rem]">Grievance Redressal Process</a></li>
-            <li><a href="#" className="text-[0.8rem]">Refund Policy</a></li>
+            <li><Link href="refund" className="text-[0.8rem]">Refund Policy</Link></li>
             <li><a href="#" className="text-[0.8rem]">Client Acceptance</a></li>
             <li><a href="#" className="text-[0.8rem]">User Agreement</a></li>
           </ul>
@@ -148,11 +148,11 @@ const Footer = () => {
           </h3>
           <div className="flex flex-col gap-1">
 
-          <p className="text-[0.8rem]">Name: Demo Pvt Ltd</p>
+          <p className="text-[0.8rem]">Name: Dalal Street Private Limited</p>
           <p className="text-[0.8rem]">Type: Non-Individual</p>
-          <p className="text-[0.8rem]">Reg. No: INH0000000</p>
+          {/* <p className="text-[0.8rem]">Reg. No: INH0000000</p>
           <p className="text-[0.8rem]">Validity: Perpetual</p>
-          <p className="text-[0.8rem]">BSE Enlistment No: 1234</p>
+          <p className="text-[0.8rem]">BSE Enlistment No: 1234</p> */}
           </div>
 
         </div>
@@ -162,12 +162,12 @@ const Footer = () => {
           </h3>
           <div className="flex flex-col gap-1">
 
-          <p className="text-[0.8rem]">Name: Demo Pvt Ltd</p>
-          <p className="text-[0.8rem]">Address: 123 Street, City, 560000</p>
-          <p className="text-[0.8rem]">Tel: +91-9999999999</p>
-          <p className="text-[0.8rem]">Email: info@demo.com</p>
-          <p className="text-[0.8rem]">CIN: U12345KA2025PTC123456</p>
-          <p className="text-[0.8rem]">GST: 29ABCDE1234F1Z0</p>
+          <p className="text-[0.8rem]">Name: Dalal Street Private Limited</p>
+          <p className="text-[0.8rem]">Address:SEBI Bhavan, Plot No.C4-A, 'G' Block, Bandra-Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra.</p>
+          <p className="text-[0.8rem]">Tel: +91-9148638118</p>
+          <p className="text-[0.8rem]">Email: research@thedalastreethub.com</p>
+          {/* <p className="text-[0.8rem]">CIN: U12345KA2025PTC123456</p> */}
+          {/* <p className="text-[0.8rem]">GST: 29ABCDE1234F1Z0</p> */}
           </div>
 
         </div>
@@ -177,10 +177,11 @@ const Footer = () => {
           </h3>
           <div className="flex flex-col gap-1">
 
-          <p className="text-[0.8rem]">Name: Demo Pvt Ltd</p>
-          <p className="text-[0.8rem]">Bank: ICICI BANK</p>
-          <p className="text-[0.8rem]">AC No: 0123456789</p>
-          <p className="text-[0.8rem]">IFSC: ICIC0000123</p>
+          <p className="text-[0.8rem]">Name: Veergond Naik</p>
+          <p className="text-[0.8rem]">Bank: ICICI Bank</p>
+          <p className="text-[0.8rem]">AC No: 232201507172</p>
+          <p className="text-[0.8rem]">IFSC: ICIC0002322</p>
+          <p className="text-[0.8rem]">UPI ID: veergondnaik@okicici</p>
           </div>
 
         </div>
@@ -188,8 +189,8 @@ const Footer = () => {
           <h3 className="font-semibold text-white mb-5">SEBI Local Office:</h3>
           <div className="flex flex-col gap-1">
 
-          <p className="text-[0.8rem]">Address: Demo Building, City</p>
-          <p className="text-[0.8rem]">Tel: +91-080-22222222</p>
+          <p className="text-[0.8rem]">Address: 19 FLOOR, PK TOWER, DALAL STREET, MUMBAI 400001 Maharashtra India</p>
+          <p className="text-[0.8rem]">Tel: +91-9148638118</p>
           </div>
 
         </div>
@@ -198,8 +199,8 @@ const Footer = () => {
           <div className="flex flex-col gap-1">
 
           <p className="text-[0.8rem]">Name: John Doe</p>
-          <p className="text-[0.8rem]">Email: compliance@demo.com</p>
-          <p className="text-[0.8rem]">Tel: +91-9999999999</p>
+          <p className="text-[0.8rem]">Email: compliance@thedalastreethub.com</p>
+          <p className="text-[0.8rem]">Tel: +91-9148638118</p>
           </div>
 
         </div>
@@ -211,8 +212,8 @@ const Footer = () => {
       {/* Copyright */}
       <div className="py-4 flex md:flex-row flex-col items-center gap-3 justify-between text-white text-sm">
         <p>All Rights Reserved | © Copyright {new Date().getFullYear()}</p>
-          <a href="#" className="hover:text-white">Privacy Policy</a>
-          <a href="#" className="hover:text-white">Terms of Use</a>
+          <Link href="privacy" className="hover:text-white">Privacy Policy</Link>
+          <Link href="terms" className="hover:text-white">Terms of Use</Link>
       </div>
 
       {/* Divider */}

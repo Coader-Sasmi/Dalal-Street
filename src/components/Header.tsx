@@ -10,39 +10,39 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full shadow-sm bg-white sticky top-0 z-50">
+    <nav className="w-full shadow-sm bg-[#1f2023] sticky top-0 z-50">
       <div className="main-container py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
         <Link href={"/"} className="flex items-center">
           <Image
-            src="/main_logo3.png"
+            src="/main_logo.png"
             alt="Dalal Street Logo"
-            width={160}
+            width={260}
             height={60}
-            className="h-auto w-[25%]"
+            className="h-auto w-[55%]"
             priority
           />
         </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-12 items-center">
-            <Link href="service" className="text-gray-800 font-semibold hover:text-[#075637]">
+            <Link href="service" className="text-white font-semibold hover:text-gray-300">
               Services
             </Link>
-            <Link href="streetfolios" className="text-gray-800 font-semibold hover:text-[#075637]">
-              Streetfolios
+            <Link href="streetfolios" className="text-white font-semibold hover:text-gray-300">
+              Dalalfolios
             </Link>
-            <Link href="streetview" className="text-gray-800 font-semibold hover:text-[#075637]">
-              Streetview
+            <Link href="streetview" className="text-white font-semibold hover:text-gray-300">
+              Dalalview
             </Link>
             </div>
             <div className="hidden md:flex space-x-4 items-center">
-            <Link href="#" className="text-[#bd3f41] hover:text-[#075637] font-semibold">
+            <Link href="#" className="text-[#bd3f41] hover:text-gray-300 font-semibold">
               Log In
             </Link>
             <button className="bg-[#bd3f41] text-white px-4 py-3 font-semibold text-xs uppercase rounded-lg hover:bg-[#bd3f41]/90 cursor-pointer transition">
-              Start Free
+              Register
             </button>
             <button className="phone-btn cursor-pointer">
             <Phone className="w-5 h-5 text-blue-700 phone-icon" />
@@ -53,7 +53,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -65,20 +65,20 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t shadow-md absolute top-full left-0 w-full z-50">
           <div className="px-6 py-4 space-y-4">
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-[#075637]">
+            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
               Services
             </Link>
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-[#075637]">
-              Streetfolios
+            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
+              Dalalfolios
             </Link>
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-[#075637]">
-              Streetview
+            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
+              Dalalview
             </Link>
-            <Link href="#" className="block text-[#bd3f41] font-semibold hover:text-[#075637]">
+            <Link href="#" className="block text-[#bd3f41] font-semibold hover:text-gray-300">
               Log In
             </Link>
             <button className=" bg-[#bd3f41] text-white px-4 py-3 font-semibold text-sm uppercase rounded-lg hover:bg-[#bd3f41]/90 transition">
-              Start Free
+              Register
             </button>
             <button className=" flex justify-center bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition">
               <Phone className="w-6 h-6 text-blue-700 phone-icon" />
