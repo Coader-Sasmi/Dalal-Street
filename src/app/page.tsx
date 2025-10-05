@@ -4,7 +4,6 @@ import InvestorsHub from "@/components/home/InvestorsHub";
 import OurProcess from "@/components/home/OurProcess";
 import ResearchCalls from "@/components/home/ResearchCalls";
 import WhyDalalStreet from "@/components/home/WhyDalalStreet";
-import { AiFillCodeSandboxSquare } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
     <WhyDalalStreet/>
     <OurProcess/>
     <InvestorsHub/>
-    <AiFillCodeSandboxSquare/>
+    {/* <AiFillCodeSandboxSquare/> */}
     </>
 
   );

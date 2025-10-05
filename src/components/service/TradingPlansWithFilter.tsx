@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import Image from "next/image";
+import React, { useRef, useState } from "react";
 
 interface Plan {
   title: string;
@@ -23,7 +24,7 @@ const plansData: Plan[] = [
     period: "Short-Term",
     registered: "79466",
     investment: "₹50,000",
-    credits: "30 Credits: ₹12,500",
+    credits: " ₹12,500",
   },
   {
     title: "Index Options (B)",
@@ -34,7 +35,7 @@ const plansData: Plan[] = [
     period: "Short-Term",
     registered: "53150",
     investment: "₹50,000",
-    credits: "30 Credits: ₹16,500",
+    credits: " ",
   },
   {
     title: "Stock Options (B)",
@@ -45,7 +46,7 @@ const plansData: Plan[] = [
     period: "Long Term",
     registered: "49686",
     investment: "₹1,00,000",
-    credits: "30 Credits: ₹21,000",
+    credits: "",
   },
   {
     title: "Index Options",
@@ -56,7 +57,7 @@ const plansData: Plan[] = [
     period: "Long Term",
     registered: "46177",
     investment: "₹2,00,000",
-    credits: "300 Credits: ₹1,15,500",
+    credits: "",
   },
   {
     title: "Cash Intraday",
@@ -67,7 +68,7 @@ const plansData: Plan[] = [
     period: "Short Term",
     registered: "38427",
     investment: "₹1,00,000",
-    credits: "300 Credits: ₹56,700",
+    credits: "",
   },
 ];
 
@@ -75,6 +76,16 @@ const TradingPlansWithFilter = () => {
   const [selectedRisk, setSelectedRisk] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string[]>([]);
   const [selectedPeriod, setSelectedPeriod] = useState<string[]>([]);
+
+  const [isOpen, setIsOpen] = useState(false);
+   const modalRef = useRef<HTMLDivElement>(null);
+
+  // Close when clicking outside
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+      setIsOpen(false);
+    }
+  };
 
   const handleCheckbox = (
     value: string,
@@ -223,16 +234,49 @@ const TradingPlansWithFilter = () => {
                   Min. Investment:{" "}
                   <span className="font-semibold">{plan.investment}</span>
                 </span>
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
-                  View
+                <button onClick={() => setIsOpen(true)}
+                 className="bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition">
+                  BUY NOW
                 </button>
+                
               </div>
             </div>
+            
           ))
         ) : (
           <p className="text-center text-gray-500 mt-10">No plans match your filters.</p>
         )}
       </div>
+            {/* Modal */}
+{/* Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+          onClick={handleBackdropClick}
+        >
+          <div
+            ref={modalRef}
+            className="bg-white rounded-xl shadow-lg p-3 relative animate-slide-up"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold"
+            >
+              &times;
+            </button>
+
+            <Image
+              src="/QR_code.jpeg"
+              alt="Dalal Street Logo"
+              width={600}
+              height={300}
+              className="h-auto w-auto"
+              priority
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

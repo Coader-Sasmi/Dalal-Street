@@ -1,16 +1,15 @@
 "use client";
 
 import {
-    Activity,
-    BarChart3,
-    FileText,
-    Filter,
-    Headphones,
-    Newspaper,
-    PhoneCall,
-    UserCheck,
+  Activity,
+  BarChart3,
+  FileText,
+  Filter,
+  Headphones,
+  Newspaper,
+  PhoneCall,
+  UserCheck,
 } from "lucide-react";
-import Image from "next/image";
 
 const features = [
   {
@@ -81,23 +80,20 @@ export default function InvestorsHub() {
         </div>
 
         {/* Bottom Section */}
-        <div className="relative mt-16 flex flex-col items-center">
-          {/* People Image */}
+        {/* <div className="relative mt-16 flex flex-col items-center">
           <Image
-            src="/investors.png" // 👉 replace with your uploaded image path
+            src="/investors.png" 
             alt="Investors"
             width={400}
             height={300}
             className="z-10 relative"
           />
 
-          {/* Trusted Text */}
           <div className="mt-4 text-center z-10">
             <p className="text-blue-500 font-semibold">Trusted By</p>
             <h3 className="text-2xl font-bold text-blue-600">329,600+ Investors</h3>
           </div>
 
-          {/* Curved Banner */}
           <div className="absolute bottom-0 left-0 w-full overflow-hidden">
             <svg
               viewBox="0 0 1440 320"
@@ -113,7 +109,7 @@ export default function InvestorsHub() {
               Aligning with Your Financial Goal and Risk Tolerance
             </h2>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
