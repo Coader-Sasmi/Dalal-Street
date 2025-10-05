@@ -5,9 +5,11 @@ import Image from "next/image";
 import { Menu, Phone, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import UserForm from "./UserForm";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenForm, setIsOpenForm] = useState(false);
 
   return (
     <nav className="w-full shadow-sm bg-[#1f2023] sticky top-0 z-50">
@@ -44,7 +46,9 @@ export default function Navbar() {
             <Link href="#" className="text-[#bd3f41] hover:text-gray-300 font-semibold">
               Log In
             </Link>
-            <button className="bg-[#bd3f41] text-white px-4 py-3 font-semibold text-xs uppercase rounded-lg hover:bg-[#bd3f41]/90 cursor-pointer transition">
+            <button 
+             onClick={() => setIsOpenForm(true)}
+            className="bg-[#bd3f41] text-white px-4 py-3 font-semibold text-xs uppercase rounded-lg hover:bg-[#bd3f41]/90 cursor-pointer transition">
               Register
             </button>
             <button className="phone-btn cursor-pointer">
@@ -63,6 +67,34 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      
+      {/* Modal */}
+      {isOpenForm && (
+        <div
+          onClick={() => setIsOpenForm(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md relative animate-slide-up"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpenForm(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl"
+            >
+              &times;
+            </button>
+
+            <h1 className="text-2xl font-semibold text-center text-gray-800 mb-5">
+              User Registration
+            </h1>
+
+            <UserForm onClose={() => setIsOpenForm(false)} />
+          </div>
+        </div>
+      )}
 
       {/* Mobile Dropdown */}
       {isOpen && (
@@ -89,6 +121,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
     </nav>
   );
 }
