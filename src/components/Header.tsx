@@ -29,19 +29,19 @@ export default function Navbar() {
         </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-12 items-center">
-            <Link href="service" className="text-white font-semibold hover:text-gray-300">
+          <div className="hidden md:flex space-x-10 items-center">
+            <Link href="service" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Services
             </Link>
-            <Link href="streetfolios" className="text-white font-semibold hover:text-gray-300">
+            <Link href="streetfolios" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Dalal Folios
             </Link>
-            <Link href="streetview" className="text-white font-semibold hover:text-gray-300">
+            <Link href="streetview" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Dalal View
             </Link>
             <button
             onClick={() => setIsOpenLogin(true)}
-             className="text-white font-semibold hover:text-gray-300">
+             className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Research Report
             </button>
             </div>
