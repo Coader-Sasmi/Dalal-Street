@@ -198,7 +198,7 @@ const Footer = () => {
           <h3 className="font-semibold text-white mb-5">Compliance Officer:</h3>
           <div className="flex flex-col gap-1">
 
-          <p className="text-[0.8rem]">Name: John Doe</p>
+          <p className="text-[0.8rem]">Name: Mr Santosh Veergond naik</p>
           <p className="text-[0.8rem]">Email: compliance@thedalastreethub.com</p>
           <p className="text-[0.8rem]">Tel: +91-9148638118</p>
           </div>
