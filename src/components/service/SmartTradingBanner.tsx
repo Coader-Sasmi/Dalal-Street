@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 
 const SmartTradingBanner = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between rounded-2xl bg-gradient-to-r from-blue-50 to-blue-100 p-6 md:p-12">
+    
+    <div className="flex flex-col md:flex-row items-center justify-between rounded-2xl bg-gradient-to-r from-blue-50 to-blue-100 my-10">
       {/* Left Text Section */}
-      <div className="max-w-2xl space-y-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+      <div className="main-container space-y-4 md:p-12 p-6">
+        <h2 className="text-3xl md:text-3xl font-bold text-gray-800 leading-snug">
           Unlock the potential of smart trading with our well-researched stock
           calls that save you time and help optimize your investment decisions
           Making.

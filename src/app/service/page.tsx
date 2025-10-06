@@ -1,10 +1,9 @@
 import SmartTradingBanner from '@/components/service/SmartTradingBanner'
 import TradingPlansWithFilter from '@/components/service/TradingPlansWithFilter'
-import React from 'react'
 
 export default function page() {
   return (
-    <div>
+    <div className='main-container'>
       <SmartTradingBanner/>
       <TradingPlansWithFilter/>
     </div>

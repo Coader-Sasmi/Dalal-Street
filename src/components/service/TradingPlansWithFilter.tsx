@@ -110,9 +110,9 @@ const TradingPlansWithFilter = () => {
   });
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 bg-gray-50 min-h-screen p-6">
+    <div className="flex flex-col md:flex-row gap-6 min-h-screen my-16">
       {/* Sidebar Filter */}
-      <div className="w-full md:w-1/4 bg-white rounded-2xl p-5 shadow-sm border">
+      <div className="w-full md:w-1/4 bg-blue-50 rounded-2xl p-5 shadow border border-blue-200">
         <div className="flex justify-between mb-4">
           <button className="px-3 py-1 rounded-md border text-sm font-medium bg-gray-100">
             Free
@@ -194,7 +194,7 @@ const TradingPlansWithFilter = () => {
           filteredPlans.map((plan, i) => (
             <div
               key={i}
-              className="bg-white border rounded-2xl shadow-sm p-6 flex flex-col md:flex-row justify-between items-start md:items-center"
+              className="bg-blue-50 border border-blue-200 rounded-2xl shadow-sm p-6 flex flex-col md:flex-row justify-between items-start md:items-center"
             >
               <div className="flex-1">
                 <h2 className="text-xl font-semibold text-gray-800">
