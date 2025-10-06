@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ResearchCalls() {
   return (
@@ -19,9 +20,9 @@ export default function ResearchCalls() {
               Pay only for Successful<br/> Research Calls.
             </span>
           </p>
-          <button className="mt-6 w-fit px-10 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
+          <Link href={"service"} className="mt-6 w-fit px-10 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
             Get Started Now
-          </button>
+          </Link>
         </div>
 
         {/* Right Section */}

@@ -16,59 +16,59 @@ interface Plan {
 
 const plansData: Plan[] = [
   {
-    title: "Cash Intraday (B)",
+    title: "Basic Intraday (B)",
     description: "Intraday Cash Segment Stocks for Small Traders (1–2 Trade Calls Per Day)",
     risk: "Moderate Risk",
     return: "Avg Return",
     type: "MIS",
     period: "Short-Term",
     registered: "79466",
-    investment: "₹50,000",
+    investment: "per month with GST",
     credits: " ₹12,500",
   },
   {
-    title: "Index Options (B)",
-    description: "Options Trading Calls for F&O Traders (1–2 Trade Calls Per Day)",
+    title: "BASIC",
+    description: "Daily 3 To 4 Calls, Expires Special Trade",
     risk: "Moderate Risk",
     return: "Avg Return",
     type: "NRML",
     period: "Short-Term",
     registered: "53150",
-    investment: "₹50,000",
-    credits: " ",
+    investment: "per month with GST",
+    credits: " ₹75,200/-",
   },
   {
-    title: "Stock Options (B)",
-    description: "Options Trading Calls for F&O Traders (1–2 Trade Calls Per Day)",
+    title: "SILVER",
+    description: "1 To 2 Calls Daily Basic, WhatsApp Support, Telephone Support, BTST STBT 3 To 5 In Month, Service Hold Facilities Available, Hero Zero Trade With Upto 90% Accuracy",
     risk: "High Risk",
     return: "Avg Return",
     type: "NRML",
     period: "Long Term",
     registered: "49686",
-    investment: "₹1,00,000",
-    credits: "",
+    investment: "quarter (3 months) with GST",
+    credits: "₹3,15,000/-",
   },
   {
-    title: "Index Options",
-    description: "Options Trading Calls for F&O Traders (1–5 Trade Calls Per Day)",
+    title: "PLATINUM",
+    description: "2 To 3 Calls In Index And Stock, Futures And Forex, Commodity Market, WhatsApp Support, Telephone Support, Hero Zero Trade With Upto 90% Accuracy",
     risk: "High Risk",
     return: "Avg Return",
     type: "NRML",
     period: "Long Term",
     registered: "46177",
-    investment: "₹2,00,000",
-    credits: "",
+    investment: "",
+    credits: "₹7,14,000/-",
   },
   {
-    title: "Cash Intraday",
-    description: "Momentum Cash Segment Calls For HNI Traders (1–5 Trade Calls Per Day)",
+    title: "DIAMOND",
+    description: "Monthly 10 Calls Only, All Segments, Research Report, Conference Call With Expert, Get Access With Dabba Trading",
     risk: "Moderate Risk",
     return: "Avg Return",
     type: "MIS/NRML",
     period: "Short Term",
     registered: "38427",
-    investment: "₹1,00,000",
-    credits: "",
+    investment: "",
+    credits: "₹14,16,000/-",
   },
 ];
 
@@ -231,7 +231,7 @@ const TradingPlansWithFilter = () => {
                   {plan.credits}
                 </span>
                 <span className="text-sm text-gray-500 mb-2">
-                  Min. Investment:{" "}
+                  {/* Min. Investment: */}
                   <span className="font-semibold">{plan.investment}</span>
                 </span>
                 <button onClick={() => setIsOpen(true)}

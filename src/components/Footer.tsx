@@ -49,7 +49,7 @@ const Footer = () => {
           <h3 className="font-semibold text-white mb-5">Company</h3>
           <ul className="space-y-2 ">
             <li><a href="#" className="text-[0.8rem]">About</a></li>
-            <li><a href="#" className="text-[0.8rem]">Services</a></li>
+            <li><Link href="service" className="text-[0.8rem]">Services</Link></li>
             <li><a href="#" className="text-[0.8rem]">Careers</a></li>
             <li><a href="#" className="text-[0.8rem]">Investor Charter</a></li>
             <li><a href="#" className="text-[0.8rem]">Premium Service</a></li>

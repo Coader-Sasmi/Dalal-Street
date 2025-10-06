@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const steps = [
   "Register to access our services.",
@@ -75,9 +76,12 @@ export default function OurProcess() {
         </div>
           {/* CTA Button */}
           <div className="md:mt-10 mt-6 flex justify-center lg:justify-start">
+            <Link href={"service"}>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-3 rounded-lg font-medium shadow">
               Explore Services
             </button>
+            </Link>
+
           </div>
 
       </div>

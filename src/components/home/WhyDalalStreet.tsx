@@ -8,6 +8,7 @@ import {
   SupportAgent,
   TrendingUp,
 } from "@mui/icons-material";
+import Link from "next/link";
 
 const features = [
   {
@@ -89,9 +90,12 @@ export default function WhyDalalStreet() {
 
         {/* Button */}
         <div className="mt-10 flex justify-center">
+          <Link href={"service"}>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium shadow">
             Get Started Now
           </button>
+          </Link>
+
         </div>
       </div>
     </section>

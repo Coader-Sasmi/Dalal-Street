@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CreditsModel() {
   return (
@@ -21,9 +22,12 @@ export default function CreditsModel() {
             </span>
           </p>
 
+          <Link href={"service"}>
           <button className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">
             Learn More
           </button>
+          </Link>
+
 
           <p className="mt-4 text-sm text-gray-500 italic">
             *Successful calls are not assurance of profits, but accountability of
