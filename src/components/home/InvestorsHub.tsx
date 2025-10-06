@@ -56,24 +56,24 @@ const features = [
 
 export default function InvestorsHub() {
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50 py-16 px-6 lg:px-20">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="relative bg-gradient-to-b from-white to-gray-50 py-16">
+      <div className="main-container">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
           DalalStreet Investor&apos;s Hub
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-gray-600 text-xl">
           Daily Market Views. Analyst Research Calls. Consistent Returns.
         </p>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-y-12 gap-y-8 mt-12 text-left">
           {features.map((f, idx) => (
             <div key={idx} className="flex items-start gap-3">
               <div className="flex-shrink-0">{f.icon}</div>
-              <div>
-                <h3 className="text-base font-semibold text-gray-900">{f.title}</h3>
-                <p className="text-sm text-gray-600">{f.desc}</p>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-lg font-semibold text-gray-900">{f.title}</h3>
+                <p className=" text-gray-600">{f.desc}</p>
               </div>
             </div>
           ))}
