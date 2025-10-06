@@ -33,12 +33,12 @@ export default function Navbar() {
             <Link href="service" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Services
             </Link>
-            <Link href="streetfolios" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
+            <Link href="dalalfolios" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Dalal Folios
             </Link>
-            <Link href="streetview" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
+            {/* <Link href="dalalview" className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
               Dalal View
-            </Link>
+            </Link> */}
             <button
             onClick={() => setIsOpenLogin(true)}
              className="text-white font-medium text-sm tracking-wider hover:text-gray-300">
@@ -130,15 +130,15 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t shadow-md absolute top-full left-0 w-full z-50">
           <div className="px-6 py-4 space-y-4">
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
+            <Link href="service" className="block text-gray-800 font-semibold hover:text-gray-300">
               Services
             </Link>
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
+            <Link href="dalalfolios" className="block text-gray-800 font-semibold hover:text-gray-300">
               Dalalfolios
             </Link>
-            <Link href="#" className="block text-gray-800 font-semibold hover:text-gray-300">
+            {/* <Link href="dalalview" className="block text-gray-800 font-semibold hover:text-gray-300">
               Dalalview
-            </Link>
+            </Link> */}
             <button
             onClick={() => setIsOpenLogin(true)}
              className="block text-gray-800 font-semibold hover:text-gray-300">
@@ -152,7 +152,7 @@ export default function Navbar() {
              className=" bg-[#bd3f41] text-white px-4 py-3 font-semibold text-sm uppercase rounded-lg hover:bg-[#bd3f41]/90 transition">
               Register
             </button>
-            <Link href="tel:+919148638118" className=" flex justify-center bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition">
+            <Link href="tel:+919148638118" className=" flex justify-center bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition w-fit">
               <Phone className="w-6 h-6 text-blue-700 phone-icon" />
             </Link>
           </div>
